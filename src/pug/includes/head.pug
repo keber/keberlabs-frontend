@@ -1,0 +1,56 @@
+
+//- ::: include PUG/JS Functionality ::: -//
+
+//- 1.Funciones Globales PUG [ Functions ]
+include ../functions/+global
+
+//- 2.Variables Globales PUG [ Data ]
+include ../data/global
+include ../data/_category
+include ../data/_product
+
+//- 3.Componentes Globales PUG [ Components ]
+include ../components/+mixins
+
+//- 4.Plugins Globales PUG [ Plugins ]
+include ../plugins/libraries++
+
+
+
+//- ::: Website HTML5 ::: -//
+<!doctype html>
+<html lang="es">
+
+
+<head>
+
+    //- Metadata
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    //- Eyelash Title
+    <title>Template Engine</title>
+
+    //- CSS Styles [ Assets ]
+    <link rel="stylesheet" href="#{dir}assets/css/style.css">
+
+    //- Jquery [ Plugins ]
+    +jquery()
+
+    //- Global Functions JS [ Scripts ]
+    <script type="text/javascript" src="#{dir}assets/js/global.js" defer></script>
+
+
+</head>
+
+<body class="">
+
+include ../includes/navbar
+include ../includes/sidebar
+
+
+
+
+
+
