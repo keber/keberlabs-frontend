@@ -1,1 +1,1 @@
-console.log("JS Connected")
+console.log("Esto sólo se ejecuta en el Home")
